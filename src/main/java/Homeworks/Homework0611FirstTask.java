@@ -4,7 +4,7 @@ Replace string with something written in the console.
  */
 import java.util.Scanner;
 
-public class Homework0611 {
+public class Homework0611FirstTask {
     public static void main (String[] args){
 
         Scanner input = new Scanner(System.in);
