@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 Compare 2 strings if they are equal
  */
-public class SecondTask {
+public class CompareTwoStrings {
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);

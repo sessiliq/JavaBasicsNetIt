@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 By given numbers from 1 to 12 define month of the year.
  */
-public class FourthTask {
+public class MonthOfTheYear {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

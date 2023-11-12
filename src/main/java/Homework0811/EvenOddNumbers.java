@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 Program that define if number is even or odd.
  */
-public class ThirdTask {
+public class EvenOddNumbers {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

@@ -2,7 +2,7 @@ package Homework0611;
 /*
 Unite two or more strings in one and write it in the console.
  */
-public class FourthTask {
+public class UniteStrings {
     public static void main(String[] args) {
 
         String firstString = "I am student at ";

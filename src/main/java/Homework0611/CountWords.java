@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 Count the words in a given string
  */
-public class ThirdTask {
+public class CountWords {
     public static void main (String[] args){
 
         Scanner input = new Scanner(System.in);

@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 A program that calculates the area and perimeter of a rectangle by given height and length.
  */
-public class SecondTask {
+public class RectangleAreaAndPerimeter {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

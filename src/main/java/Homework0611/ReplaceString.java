@@ -4,7 +4,7 @@ Replace string with something written in the console.
  */
 import java.util.Scanner;
 
-public class FirstTask {
+public class ReplaceString {
     public static void main (String[] args){
 
         Scanner input = new Scanner(System.in);

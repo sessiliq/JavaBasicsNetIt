@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 Program that reads 3 numbers and define which is biggest.
  */
-public class FirstTask {
+public class BiggestNumber {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
