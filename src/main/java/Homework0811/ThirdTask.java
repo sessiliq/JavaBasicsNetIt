@@ -3,7 +3,7 @@ package Homework0811;
 import java.util.Scanner;
 
 /*
-Program that define if number is even ot odd.
+Program that define if number is even or odd.
  */
 public class ThirdTask {
     public static void main(String[] args) {
