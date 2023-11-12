@@ -1,11 +1,11 @@
-package Homeworks;
+package Homework0611;
 
 import java.util.Scanner;
 
 /*
 Count the words in a given string
  */
-public class Homework0611ThirdTask {
+public class ThirdTask {
     public static void main (String[] args){
 
         Scanner input = new Scanner(System.in);
@@ -17,6 +17,6 @@ public class Homework0611ThirdTask {
 
         System.out.printf("In this sentence are %d word.\n", countWords);
 
-        //ако между думата и точката има спейс, брои точката за отделна дума.е
+        //ако между думата и точката има спейс, брои точката за отделна дума.
     }
 }

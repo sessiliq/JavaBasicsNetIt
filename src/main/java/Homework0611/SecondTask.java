@@ -1,11 +1,11 @@
-package Homeworks;
+package Homework0611;
 
 import java.util.Scanner;
 
 /*
 Compare 2 strings if they are equal
  */
-public class Homework0611SecondTask {
+public class SecondTask {
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
