@@ -14,6 +14,9 @@ public class Positions {
         this.position = position;
         this.age = age;
     }
+    Positions(){
+
+    }
     //methods for setting values of the private variables
     public void setName(String newName){
         this.name = newName;
