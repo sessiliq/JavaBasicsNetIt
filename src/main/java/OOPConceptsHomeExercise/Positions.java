@@ -10,9 +10,9 @@ public class Positions {
 
     //constructor
     Positions(String name, String position, int age){
-        this.name = name;
-        this.position = position;
-        this.age = age;
+        setName(name);
+        setPosition(position);
+        setAge(age);
     }
     Positions(){
 
