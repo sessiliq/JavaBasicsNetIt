@@ -6,7 +6,7 @@ public class Pet {
     private double age;
     private boolean isMale;
     private float weight;
-    private String sex;
+
     //constructor
     public Pet (String name, String breed, double age, boolean isMale, float weight){
         this.name = name;
@@ -53,20 +53,13 @@ public class Pet {
             this.age = age;
         }
     }
-    private boolean isMale() {
+
+    public boolean isMale() {
         return isMale;
     }
 
-    private void setMale(boolean male) {
-        if (sex.equals("male")){
-            isMale = true;
-        }
-        else if (sex.equals("female")){
-            isMale = false;
-        }
-        else {
-            System.out.println("Invalid entry for sex!");
-        }
+    public void setMale(boolean male) {
+        this.isMale = isMale;
     }
 
     private float getWeight() {
@@ -74,14 +67,27 @@ public class Pet {
     }
 
     private void setWeight(float weight) {
-        this.weight = weight;
+        if (weight < 0){
+            System.out.println("Invalid weight!");
+        }
+        else {
+            this.weight = weight;
+        }
     }
 
     //method that prints all data
 
     public void printAlldata(){
-        System.out.printf("%s is a %s breed and %f years old. It is %s and weights %f\n",name, breed,
-                age, sex, weight);
+
+        if (isMale){
+            System.out.printf("%s is a %s breed and %.2f years old. It is male and weights  %.2f\n",name, breed,
+                    age, weight);
+        }
+        else {
+            System.out.printf("%s is a %s breed and  %.2f years old. It is female and weights  %.2f\n",name, breed,
+                    age, weight);
+        }
+
     }
     public void makeNoise(){
         System.out.printf("%s is making noises\n", name);

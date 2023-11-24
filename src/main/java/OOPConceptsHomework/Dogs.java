@@ -3,9 +3,6 @@ package OOPConceptsHomework;
 public class Dogs extends Pet{
     private boolean hasLongFur;
     private boolean hasTail;
-    private String hasFur;
-    private String tail;
-
 
     public Dogs(String name, String breed, double age, boolean isMale, float weight, boolean hasTail, boolean hasLongFur) {
         super(name, breed, age, isMale, weight);
@@ -18,15 +15,7 @@ public class Dogs extends Pet{
     }
 
     private void setHasLongFur(boolean hasLongFur) {
-       if (hasFur.equals("yes")){
-           hasLongFur = true;
-       }
-       else if (hasFur.equals("no")) {
-           hasLongFur = false;
-       }
-       else {
-           System.out.println("Invalid entry");
-       }
+        this.hasLongFur = hasLongFur;
     }
 
     private boolean isHasTail() {
@@ -34,16 +23,9 @@ public class Dogs extends Pet{
     }
 
     private void setHasTail(boolean hasTail) {
-        if (tail.equals("yes")){
-            hasTail = true;
-        }
-        else if (tail.equals("no")) {
-            hasTail = false;
-        }
-        else {
-            System.out.println("Invalid entry");
-        }
+        this.hasTail = hasTail;
     }
+
     public void printDogData(){
         printAlldata();
         if (hasTail && hasLongFur){
