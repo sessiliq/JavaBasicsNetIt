@@ -3,11 +3,11 @@ public class MainMethod {
     public static void main(String[] args) {
 
        Numbers.averageValue(1,2);
-       Numbers.sum(Numbers.averageValue(100,10),Numbers.averageValue(50,40));
+       Numbers.sum(Numbers.averageValue(100,11),Numbers.averageValue(51,40));
 
         System.out.println("--------------------------");
 
-       Numbers.averageValue(22,104);
+       Numbers.averageValue(22,103);
        Numbers.sum(Numbers.averageValue(2,-5),Numbers.averageValue(-50,40));
 
         System.out.println("--------------------------");

@@ -25,14 +25,14 @@ public class Numbers {
             System.out.printf("Numbers %d, %d and %d are not equal.\n", a, b, c);
         }
     }
-    public static int averageValue(int a, int b){
-        int result = (a + b) / 2;
-        System.out.printf("The average value of %d and %d is: %d\n",a, b, result);
+    public static double averageValue(double a, double b){
+        double result = (a + b) / 2;
+        System.out.printf("The average value of %.1f and %.1f is: %.1f\n",a, b, result);
         return result;
     }
-    public static int sum(int a, int b){
-        int result = a + b;
-        System.out.printf("The sum of %d and %d is: %d\n",a, b, result);
+    public static double sum(double a, double b){
+        double result = a + b;
+        System.out.printf("The sum of %.1f and %.1f is: %.1f\n",a, b, result);
         return result;
     }
 
