@@ -10,19 +10,19 @@ public class Dogs extends Pet{
         this.hasLongFur = hasLongFur;
     }
 
-    private boolean isHasLongFur() {
+    public boolean isHasLongFur() {
         return hasLongFur;
     }
 
-    private void setHasLongFur(boolean hasLongFur) {
+    public void setHasLongFur(boolean hasLongFur) {
         this.hasLongFur = hasLongFur;
     }
 
-    private boolean isHasTail() {
+    public boolean isHasTail() {
         return hasTail;
     }
 
-    private void setHasTail(boolean hasTail) {
+    public void setHasTail(boolean hasTail) {
         this.hasTail = hasTail;
     }
 

@@ -27,9 +27,7 @@ public class MainMethod {
         System.out.println("------------------");
 
         mishko.printDogData();
-        System.out.println("------------------");
-
-        greshno.printDogData();
+        System.out.println("------------------");greshno.printDogData();
         System.out.println("------------------");
 
     }

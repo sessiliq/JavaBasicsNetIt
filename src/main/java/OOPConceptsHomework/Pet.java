@@ -6,20 +6,11 @@ public class Pet {
     private double age;
     private boolean isMale;
     private float weight;
-
-    //constructor
-    public Pet (String name, String breed, double age, boolean isMale, float weight){
-        this.name = name;
-        this.breed = breed;
-        this.age = age;
-        this.isMale = isMale;
-        this.weight = weight;
-    }
     public String getName() {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         if (!name.isEmpty()){
             this.name = name;
         }
@@ -28,11 +19,11 @@ public class Pet {
         }
     }
 
-    private String getBreed() {
+    public String getBreed() {
         return breed;
     }
 
-    private void setBreed(String breed) {
+    public void setBreed(String breed) {
         if (!name.isEmpty()){
             this.breed = breed;
         }
@@ -41,16 +32,16 @@ public class Pet {
         }
     }
 
-    private double getAge() {
+    public double getAge() {
        return age;
     }
 
-    private void setAge(int age) {
-        if (age < 0){
-            System.out.println("Invalid age!");
+    public void setAge(int age) {
+        if (age > 0){
+            this.age = age;
         }
         else {
-            this.age = age;
+            System.out.println("Invalid age!");
         }
     }
 
@@ -62,17 +53,27 @@ public class Pet {
         this.isMale = isMale;
     }
 
-    private float getWeight() {
+    public float getWeight() {
         return weight;
     }
 
-    private void setWeight(float weight) {
-        if (weight < 0){
-            System.out.println("Invalid weight!");
-        }
-        else {
+    public void setWeight(float weight) {
+        if (weight > 0){
             this.weight = weight;
         }
+        else {
+            System.out.println("Invalid weight!");
+        }
+    }
+
+
+    //constructor
+    public Pet (String name, String breed, double age, boolean isMale, float weight){
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.isMale = isMale;
+        this.weight = weight;
     }
 
     //method that prints all data
@@ -80,12 +81,12 @@ public class Pet {
     public void printAlldata(){
 
         if (isMale){
-            System.out.printf("%s is a %s breed and %.2f years old. It is male and weights  %.2f\n",name, breed,
-                    age, weight);
+            System.out.printf("%s is a %s breed and %.2f years old. It is male and weights  %.2f\n",getName(), getBreed(),
+                    getAge(), getWeight());
         }
         else {
-            System.out.printf("%s is a %s breed and  %.2f years old. It is female and weights  %.2f\n",name, breed,
-                    age, weight);
+            System.out.printf("%s is a %s breed and  %.2f years old. It is female and weights  %.2f\n",getName(), getBreed(),
+                    getAge(), getWeight());
         }
 
     }
