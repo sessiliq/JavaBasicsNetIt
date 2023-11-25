@@ -2,12 +2,12 @@ package PasswordHomework;
 public class MainMethod {
     public static void main(String[] args) {
 
-        password2 fromConsole = new password2();
-        password2 lessThanEightSymbols = new password2("kkk");
-        password2 onlyLetters = new password2("abcdefghj");
-        password2 onlyNumbers = new password2("123456789");
-        password2 onlySpecialSymbols = new password2("!@#$%^&*(");
-        password2 correctPassword = new password2("pass123!@");
+        CheckPassword fromConsole = new CheckPassword();
+        CheckPassword lessThanEightSymbols = new CheckPassword("kkk");
+        CheckPassword onlyLetters = new CheckPassword("abcdefghj");
+        CheckPassword onlyNumbers = new CheckPassword("123456789");
+        CheckPassword onlySpecialSymbols = new CheckPassword("!@#$%^&*(");
+        CheckPassword correctPassword = new CheckPassword("pass123!@");
 
         fromConsole.acceptFromConsole();
         fromConsole.checkPassword(fromConsole.passwordAccepted);

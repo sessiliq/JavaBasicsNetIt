@@ -7,14 +7,14 @@ Requirements:
 1.At least 8 symbols
 2.Must contain special character, number and letter
  */
-public class password2 {
+public class CheckPassword {
     //variable that keeps password
     public String passwordAccepted;
 
-    public password2(){
+    public CheckPassword(){
 
     }
-    public password2(String passwordAccepted) {
+    public CheckPassword(String passwordAccepted) {
         this.passwordAccepted = passwordAccepted;
     }
 
