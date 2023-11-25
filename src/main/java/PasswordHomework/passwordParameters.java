@@ -9,7 +9,7 @@ Requirements:
 2.Need to contain special character, number and letter
  */
 public class passwordParameters {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         //variables for containing all symbols
         boolean hasNumber = false;
         boolean hasLetter = false;
@@ -64,4 +64,8 @@ public class passwordParameters {
             System.out.println("Password must contain at least one letter and one number!");
         }
     }
+
+    */
 }
+
+
