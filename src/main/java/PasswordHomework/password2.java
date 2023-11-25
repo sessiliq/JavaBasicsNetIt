@@ -11,7 +11,11 @@ public class password2 {
     //variable that keeps password
     public String passwordAccepted;
 
-    public password2() {
+    public password2(){
+
+    }
+    public password2(String passwordAccepted) {
+        this.passwordAccepted = passwordAccepted;
     }
 
     //method that accepts password
