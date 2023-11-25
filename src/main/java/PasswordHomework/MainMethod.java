@@ -12,18 +12,18 @@ public class MainMethod {
 
         System.out.println("--------------------------");
 
-       Numbers.numbersPositive(1,2,3);
-       Numbers.numbersPositive(-1,2,3);
-       Numbers.numbersPositive(-1,-2,3);
-       Numbers.numbersPositive(-1,-2,-3);
+       Numbers.checkIfNumbersPositive(1,2,3);
+       Numbers.checkIfNumbersPositive(-1,2,3);
+       Numbers.checkIfNumbersPositive(-1,-2,3);
+       Numbers.checkIfNumbersPositive(-1,-2,-3);
 
         System.out.println("--------------------------");
 
-        Numbers.numbersEqual(2,3,5);
-        Numbers.numbersEqual(2,2,5);
-        Numbers.numbersEqual(2,2,2);
-        Numbers.numbersEqual(-2,2,-5);
-        Numbers.numbersEqual(-5,-5,-5);
+        Numbers.checkIfNumbersEqual(2,3,5);
+        Numbers.checkIfNumbersEqual(2,2,5);
+        Numbers.checkIfNumbersEqual(2,2,2);
+        Numbers.checkIfNumbersEqual(-2,2,-5);
+        Numbers.checkIfNumbersEqual(-5,-5,-5);
 
         System.out.println("--------------------------");
 

@@ -1,9 +1,13 @@
 package PasswordHomework;
-
+/*
+1. Method that checks if 3 numbers are positive
+2. Method that checks if 3 numbers are equal
+3. Method that return average value of 2 numbers
+4. Method that returns sum of two numbers and accepts previous method as parameter
+ */
 public class Numbers {
 
-    //check if 3 numbers are positive and equal
-    public static void numbersPositive (int a, int b, int c){
+    public static void checkIfNumbersPositive (int a, int b, int c){
         if (a >= 0 && b >= 0 && c >= 0){
             System.out.println("All numbers are positive.");
         }
@@ -11,7 +15,7 @@ public class Numbers {
             System.out.println("There are negative numbers!");
         }
     }
-    public static void numbersEqual(int a, int b, int c){
+    public static void checkIfNumbersEqual(int a, int b, int c){
         if(a == b){
             if (b == c){
                 System.out.printf("Numbers %d, %d and %d are equal.\n", a, b, c);

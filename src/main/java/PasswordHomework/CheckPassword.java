@@ -11,14 +11,16 @@ public class CheckPassword {
     //variable that keeps password
     public String passwordAccepted;
 
+    //constructor
     public CheckPassword(){
 
     }
+    //constructor
     public CheckPassword(String passwordAccepted) {
         this.passwordAccepted = passwordAccepted;
     }
 
-    //method that accepts password
+    //method that accepts password from console
     public void acceptFromConsole() {
         Scanner input = new Scanner(System.in);
         passwordAccepted = input.nextLine();
