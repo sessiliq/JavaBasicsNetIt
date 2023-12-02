@@ -6,6 +6,8 @@ public class Pet {
     private double age;
     private boolean isMale;
     private float weight;
+
+    //setters and getters
     public String getName() {
         return name;
     }
@@ -37,11 +39,11 @@ public class Pet {
     }
 
     public void setAge(int age) {
-        if (age > 0){
-            this.age = age;
+        if (age < 0){
+            System.out.println("Invalid age!");
         }
         else {
-            System.out.println("Invalid age!");
+            this.age = age;
         }
     }
 
@@ -58,11 +60,11 @@ public class Pet {
     }
 
     public void setWeight(float weight) {
-        if (weight > 0){
-            this.weight = weight;
+        if (weight < 0){
+            System.out.println("Invalid weight!");
         }
         else {
-            System.out.println("Invalid weight!");
+            this.weight = weight;
         }
     }
 
@@ -78,19 +80,19 @@ public class Pet {
 
     //method that prints all data
 
-    public void printAlldata(){
+    public void printAllData(){
 
         if (isMale){
-            System.out.printf("%s is a %s breed and %.2f years old. It is male and weights  %.2f\n",getName(), getBreed(),
+            System.out.printf("%s is a %s breed and %.2f years old. It is male and weights  %.2fkg.\n",getName(), getBreed(),
                     getAge(), getWeight());
         }
         else {
-            System.out.printf("%s is a %s breed and  %.2f years old. It is female and weights  %.2f\n",getName(), getBreed(),
+            System.out.printf("%s is a %s breed and  %.2f years old. It is female and weights  %.2fkg.\n",getName(), getBreed(),
                     getAge(), getWeight());
         }
 
     }
     public void makeNoise(){
-        System.out.printf("%s is making noises\n", name);
+        System.out.printf("%s is making noises.\n", name);
     }
 }

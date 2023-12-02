@@ -1,9 +1,11 @@
 package OOPConceptsHomework;
 
 public class Dogs extends Pet{
+    //variables specific for class Dog
     private boolean hasLongFur;
     private boolean hasTail;
 
+    //constructor for class Dog
     public Dogs(String name, String breed, double age, boolean isMale, float weight, boolean hasTail, boolean hasLongFur) {
         super(name, breed, age, isMale, weight);
         this.hasTail = hasTail;
@@ -27,20 +29,20 @@ public class Dogs extends Pet{
     }
 
     public void printDogData(){
-        printAlldata();
+        printAllData();
         if (hasTail && hasLongFur){
-            System.out.printf("%s has tail and long fur\n", getName());
+            System.out.printf("%s has tail and long fur.\n", getName());
         }
         else if(hasTail){
-            System.out.printf("%s has tail and short fur\n", getName());
+            System.out.printf("%s has tail and short fur.\n", getName());
         }
         else if (hasLongFur){
-            System.out.printf("%s has long fur and no tail\n", getName());
+            System.out.printf("%s has long fur and no tail..\n", getName());
         }
         else {
             System.out.printf("%s short fur and no tail\n", getName());        }
     }
     public void makeNoise(){
-        System.out.printf("%s is barking\n", getName());
+        System.out.printf("%s is barking.\n", getName());
     }
 }
