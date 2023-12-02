@@ -26,7 +26,7 @@ public class Pet {
     }
 
     public void setBreed(String breed) {
-        if (!name.isEmpty()){
+        if (!breed.isEmpty()){
             this.breed = breed;
         }
         else {
@@ -38,12 +38,12 @@ public class Pet {
        return age;
     }
 
-    public void setAge(int age) {
-        if (age < 0){
-            System.out.println("Invalid age!");
+    public void setAge(double age) {
+        if (age > 0){
+            this.age = age;
         }
         else {
-            this.age = age;
+            System.out.println("Invalid age!");
         }
     }
 
@@ -52,7 +52,7 @@ public class Pet {
     }
 
     public void setMale(boolean male) {
-        this.isMale = isMale;
+        this.isMale = male;
     }
 
     public float getWeight() {
@@ -60,22 +60,20 @@ public class Pet {
     }
 
     public void setWeight(float weight) {
-        if (weight < 0){
-            System.out.println("Invalid weight!");
-        }
-        else {
+        if (weight > 0) {
             this.weight = weight;
+        } else {
+            System.out.println("Invalid weight!");
         }
     }
 
-
     //constructor
     public Pet (String name, String breed, double age, boolean isMale, float weight){
-        this.name = name;
-        this.breed = breed;
-        this.age = age;
-        this.isMale = isMale;
-        this.weight = weight;
+        setName(name);
+        setBreed(breed);
+        setAge(age);
+        setMale(isMale);
+        setWeight(weight);
     }
 
     //method that prints all data

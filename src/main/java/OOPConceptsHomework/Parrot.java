@@ -5,7 +5,7 @@ public class Parrot extends Pet{
 
     public Parrot (String name, String breed, double age, boolean isMale, float weight, boolean isSpeaking){
         super(name, breed, age, isMale, weight);
-        this.isSpeaking = isSpeaking;
+        setSpeaking(isSpeaking);
     }
 
     public boolean isSpeaking() {

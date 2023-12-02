@@ -8,8 +8,8 @@ public class Dogs extends Pet{
     //constructor for class Dog
     public Dogs(String name, String breed, double age, boolean isMale, float weight, boolean hasTail, boolean hasLongFur) {
         super(name, breed, age, isMale, weight);
-        this.hasTail = hasTail;
-        this.hasLongFur = hasLongFur;
+        setHasTail(hasTail);
+        setHasLongFur(hasLongFur);
     }
 
     public boolean isHasLongFur() {
