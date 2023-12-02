@@ -26,14 +26,12 @@ public class Numbers {
         }
     }
     public static double averageValue(double a, double b){
-        double result = (a + b) / 2;
-        System.out.printf("The average value of %.1f and %.1f is: %.1f\n",a, b, result);
-        return result;
+        System.out.printf("The average value of %.1f and %.1f is: %.1f\n",a, b, (a + b)/2);
+        return  (a + b)/2;
     }
     public static double sum(double a, double b){
-        double result = a + b;
-        System.out.printf("The sum of %.1f and %.1f is: %.1f\n",a, b, result);
-        return result;
+        System.out.printf("The sum of %.1f and %.1f is: %.1f\n",a, b, a + b);
+        return a + b;
     }
 
     /*
