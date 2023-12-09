@@ -14,7 +14,7 @@ public class Players {
     public double getOverallSkill() {
         return overallSkill;
     }
-    public void setOverallSkill(double overallSkill) {
+    private void setOverallSkill(double overallSkill) {
         //overall skill is average value of all statistics
         overallSkill = ( (endurance + sprint + dribble + passing + shooting) / 5);
         this.overallSkill = overallSkill;
@@ -23,48 +23,93 @@ public class Players {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    private void setName(String name) {
+        if (name.isEmpty()){
+            System.out.println("Name must be entered!");
+        }
+        else {
+            this.name = name;
+        }
     }
 
-    public double getEndurance() {
+    private double getEndurance() {
         return endurance;
     }
 
-    public void setEndurance(double endurance) {
-        this.endurance = endurance;
+    private void setEndurance(double endurance) {
+        if (endurance < 0){
+            System.out.println("The value of endurance cannot be less than 0!");
+        }
+        else if (endurance > 100){
+            System.out.println("The value of endurance cannot be more than 100!");
+        }
+        else {
+            this.endurance = endurance;
+        }
     }
 
-    public double getSprint() {
+    private double getSprint() {
         return sprint;
     }
 
-    public void setSprint(double sprint) {
-        this.sprint = sprint;
+    private void setSprint(double sprint) {
+        if (sprint < 0){
+            System.out.println("The value of sprint cannot be less than 0!");
+        }
+        else if (sprint> 100){
+            System.out.println("The value of sprint cannot be more than 100!");
+        }
+        else {
+            this.sprint = sprint;
+        }
     }
 
-    public double getDribble() {
+    private double getDribble() {
         return dribble;
     }
 
-    public void setDribble(double dribble) {
-        this.dribble = dribble;
+    private void setDribble(double dribble) {
+        if (dribble < 0){
+            System.out.println("The value of dribble cannot be less than 0!");
+        }
+        else if (dribble > 100){
+            System.out.println("The value of dribble cannot be more than 100!");
+        }
+        else {
+            this.dribble = dribble;
+        }
     }
 
-    public double getPassing() {
+    private double getPassing() {
         return passing;
     }
 
-    public void setPassing(double passing) {
-        this.passing = passing;
+    private void setPassing(double passing) {
+        if (passing < 0){
+            System.out.println("The value of passing cannot be less than 0!");
+        }
+        else if (passing > 100){
+            System.out.println("The value of passing cannot be more than 100!");
+        }
+        else {
+            this.passing = passing;
+        }
     }
 
-    public double getShooting() {
+    private double getShooting() {
         return shooting;
     }
 
-    public void setShooting(double shooting) {
-        this.shooting = shooting;
+    private void setShooting(double shooting) {
+        if (shooting < 0){
+            System.out.println("The value of shooting cannot be less than 0!");
+        }
+        else if (shooting > 100){
+            System.out.println("The value of shooting cannot be more than 100!");
+        }
+        else {
+            this.shooting = shooting;
+        }
     }
 
     //Constructor for Player

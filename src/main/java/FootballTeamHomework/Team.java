@@ -17,7 +17,7 @@ public class Team {
         return name;
     }
 
-    public void setName(String name) {
+    private void setName(String name) {
         if (name.isEmpty()){
             System.out.println("Name must be entered!");
         }
@@ -36,10 +36,17 @@ public class Team {
         setName(name);
     }
 
-    //mothod for adding members at the team. Here rating is set.
+    //method for adding members at the team. Here rating is set.
     public void addPlayerToTeam(Players eachPlayer){
         allPlayers.add(eachPlayer);
         currentRating+= eachPlayer.getOverallSkill();
+        rating = currentRating / allPlayers.size();
+    }
+
+    //method for removing member of the team
+    public void removePlayerFromTeam(Players currentPlayer){
+        allPlayers.remove(currentPlayer);
+        currentRating -= currentPlayer.getOverallSkill();
         rating = currentRating / allPlayers.size();
     }
 
