@@ -2,7 +2,16 @@ package MethodsExercise;
 
 public class Methods {
     public String name;
+
+    //в дефолтния конструктор можем да сетне директно стойност
+    //всички обекти, които създадем ще са с името, зададено тук
+    public Methods(){
+        this("Goshko");
+    }
+    //този конструктор приема параметри и ги сетва към обекта
     public Methods (String name){
+        //this name - името на обекта = името от скобите
+        //ползва се да разграничим инстанс променливата от другата тук
         this.name = name;
     }
     /*static методите принадлежат към класа, не е нужно да се създава обект от този клас, за да се използват.
@@ -11,6 +20,12 @@ public class Methods {
      */
     public static int sumNumbers(int a, int b){
         return a + b;
+    }
+
+    //може return type да е различен ако те са съвместими
+    public static float multiply(int a, int b){
+        int result = a * b;
+        return result;
     }
 
     //method overloading - използва се името на друг метод, но с различни параметри
