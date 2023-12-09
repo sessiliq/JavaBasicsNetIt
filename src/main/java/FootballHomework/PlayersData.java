@@ -1,13 +1,27 @@
 package FootballHomework;
 
-public class PlayerStatistic {
+public class PlayersData {
+    private String name;
     private double endurance;
     private double sprint;
     private double dribble;
     private  double passing;
     private double shooting;
 
-    public void PlayerStatistic(double endurance, double sprint, double dribble, double passing, double shooting){
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (!name.isEmpty()){
+            System.out.println("Name cannot be empty!");
+        }
+        else {
+            this.name = name;
+        }
+    }
+
+    public void PlayersData(String name, double endurance, double sprint, double dribble, double passing, double shooting){
         setEndurance(endurance);
         setSprint(sprint);
         setDribble(dribble);
@@ -80,8 +94,12 @@ public class PlayerStatistic {
         }
     }
 
-    //method that calculate overall skill
+    /*//method that calculate overall skill
     public double overallSkill(double endurance, double sprint, double dribble, double passing, double shooting){
         return (endurance + sprint + dribble + passing + shooting) / 5;
     }
+
+
+     */
+    public double overallSkill = (endurance + sprint + dribble + passing + shooting) / 5;
 }
