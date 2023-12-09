@@ -45,4 +45,13 @@ public class Methods {
     public void printSomeText(){
         System.out.printf("%s is your name \n", name);
     }
+
+    public void isNumberPositive(int a){
+        if (a > 0){
+            System.out.println("The number is positive.");
+        }
+        else{
+            System.out.println("The number is negative or zero.");
+        }
+    }
 }

@@ -9,5 +9,7 @@ public class MainMethod {
         Methods test1 = new Methods("Test");
         test1.sumTwoNumbers(2,3);
         test1.printSomeText();
+        test1.isNumberPositive(-2);
+        test1.isNumberPositive(2);
     }
 }
