@@ -18,9 +18,10 @@ public class Homework8 {
         System.out.printf("Area of the triangle is %.3f\n",result);
     }
 
+    //Проверява дали страните са положителни числа, aко са пресмята лицето на триъгълника
     public static void areSidesNegativeNumbers(double a, double b, double c){
-        if (a < 0|| b < 0 || c < 0){
-            System.out.println("All numbers must be positive!");
+        if (a <= 0|| b <= 0 || c <= 0){
+            System.out.println("All numbers must be positive and other than zero!");
         }
         else {
             triangleArea(a,b,c);

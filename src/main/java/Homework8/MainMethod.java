@@ -9,5 +9,6 @@ public class MainMethod {
 
         Homework8.areSidesNegativeNumbers(3,3,3);
         Homework8.areSidesNegativeNumbers(4,4,4);
+        Homework8.areSidesNegativeNumbers(4,4,-4);
     }
 }
