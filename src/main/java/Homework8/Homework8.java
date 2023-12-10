@@ -6,9 +6,26 @@ package Homework8;
 (да се използва клас Random).
  */
 import java.util.Random;
+import java.util.Scanner;
 
 public class Homework8 {
-   //Compare 3 numbers and return the biggest
+
+    public static void readNumbersFromConsole(){
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please, enter first number:");
+        int firstNumber = input.nextInt();
+
+        System.out.println("Please, enter second number:");
+        int secondNumber = input.nextInt();
+
+        System.out.println("Please, enter third number:");
+        int thirdNumber = input.nextInt();
+
+        System.out.printf("The biggest number is: %d\n",biggestNumber(firstNumber,secondNumber,thirdNumber));
+    }
+
+    //Compare 3 numbers and return the biggest
     public static int biggestNumber (int a, int b, int c){
         return Math.max(Math.max(a,b),c);
     }

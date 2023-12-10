@@ -2,6 +2,9 @@ package Homework8;
 
 public class MainMethod {
     public static void main(String[] args) {
+        Homework8.readNumbersFromConsole();
+        System.out.println("----------------------------------");
+
         System.out.printf("The biggest number is: %d\n",Homework8.biggestNumber(0,-2,-3));
         System.out.printf("The biggest number is: %d\n",Homework8.biggestNumber(143,3,1));
         System.out.printf("The biggest number is: %d\n",Homework8.biggestNumber(-3,2,1));
