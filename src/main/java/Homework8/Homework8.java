@@ -1,5 +1,7 @@
 package Homework8;
 
+import java.util.Random;
+
 public class Homework8 {
     public static int biggestNumber (int a, int b, int c){
         return Math.max(Math.max(a,b),c);
@@ -26,5 +28,40 @@ public class Homework8 {
         else {
             triangleArea(a,b,c);
         }
+    }
+
+    public static void createArray(int a){
+        if (isNumberNegative(a)){
+            int [] newArray = new int[a];
+
+            Random randomNumber = new Random();
+
+            for (int i = 0; i <= a - 1; i++){
+                newArray[i] = randomNumber.nextInt();
+            }
+
+            printArray(newArray);
+        }
+        else {
+            System.out.println("The size of an array cannot be 0 or less!");
+        }
+    }
+
+    public static void printArray(int [] someArray){
+        for (int number: someArray) {
+            System.out.println(number);
+        }
+    }
+
+    public static boolean isNumberNegative(int a){
+        boolean isPositive;
+
+        if (a <= 0){
+            isPositive = false;
+        }
+        else {
+            isPositive = true;
+        }
+        return isPositive;
     }
 }
