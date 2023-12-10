@@ -8,12 +8,13 @@ public class MainMethod {
         System.out.println("----------------------------------");
 
 
-        Homework8.areSidesNegativeNumbers(3,3,3);
-        Homework8.areSidesNegativeNumbers(4,4,4);
-        Homework8.areSidesNegativeNumbers(4,4,-4);
+        Homework8.triangleArea(3,3,3);
+        Homework8.triangleArea(4,4,4);
+        Homework8.triangleArea(4,4,-4);
         System.out.println("----------------------------------");
 
         Homework8.createArray(3);
         Homework8.createArray(-3);
+        Homework8.createArray(0);
     }
 }
