@@ -62,4 +62,10 @@ public class Company {
             this.vatNumber = vatNumber;
         }
     }
+
+    public Company (String companyName, String dateOfFoundation, String vatNumber){
+        setCompanyName(companyName);
+        setDateOfFoundation(dateOfFoundation);
+        setVatNumber(vatNumber);
+    }
 }
