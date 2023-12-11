@@ -17,4 +17,49 @@ set-метода му(length = 10)
 Създайте интерфейс описващ издаване на фактура и го имплементирайте във Фирма-ЕТ.
  */
 public class Company {
+    private String companyName;
+    private String dateOfFoundation;
+    private String vatNumber;
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        if (companyName.isEmpty()){
+            System.out.println("Company name must be entered!");
+        }
+        else {
+            this.companyName = companyName;
+        }
+    }
+
+    public String getDateOfFoundation() {
+        return dateOfFoundation;
+    }
+
+    public void setDateOfFoundation(String dateOfFoundation) {
+       if (dateOfFoundation.isEmpty()){
+           System.out.println("Foundation date must be entered!");
+       }
+       else {
+           this.dateOfFoundation = dateOfFoundation;
+       }
+    }
+
+    public String getVatNumber() {
+        return vatNumber;
+    }
+
+    public void setVatNumber(String vatNumber) {
+        if (vatNumber.length() < 10){
+            System.out.println("VAT number cannot be less than 10 symbols!");
+        }
+        else if (vatNumber.isEmpty()){
+            System.out.println("VAT number must be entered!");
+        }
+        else {
+            this.vatNumber = vatNumber;
+        }
+    }
 }
