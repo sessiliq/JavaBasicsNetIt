@@ -24,7 +24,8 @@ public class Team {
     }
 
     private void setRating(double rating){
-        this.rating += eachPlayer.getForCurrentPlayer();
+        rating += eachPlayer.getStatsForCurrentPlayer();
+        this.rating = rating;
     }
 
 }

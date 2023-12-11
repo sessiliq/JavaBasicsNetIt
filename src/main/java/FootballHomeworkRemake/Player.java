@@ -3,18 +3,18 @@ package FootballHomeworkRemake;
 public class Player {
     private String name;
 
-    private PlayersStats forCurrentPlayer;
+    private double statsForCurrentPlayer;
 
     public String getName() {
         return name;
     }
 
-    public PlayersStats getForCurrentPlayer() {
-        return forCurrentPlayer;
+    public double getStatsForCurrentPlayer() {
+        return statsForCurrentPlayer;
     }
 
     public void setForCurrentPlayer(PlayersStats forCurrentPlayer) {
-        this.forCurrentPlayer = forCurrentPlayer;
+        statsForCurrentPlayer = forCurrentPlayer.getOverallSkill();
     }
 
     private void setName(String name) {
