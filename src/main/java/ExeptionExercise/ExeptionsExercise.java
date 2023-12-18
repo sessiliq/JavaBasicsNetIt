@@ -1,21 +1,21 @@
 package ExeptionExercise;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
+import java.io.*;
 
 public class ExeptionsExercise {
 
-    public static void readFile(String filePath){
-        FileInputStream input = new FileInputStream(filePath);
-        BufferedReader in = new BufferedReader(new FileInputStream(filePath));
+    public static void readFile(String filePath) throws IOException {
+        FileInputStream fullFilePath = new FileInputStream(filePath);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fullFilePath));
+
 
         String fileText = null;
 
-        while ((fileText = in.readLine() != null)){
+        while ((fileText = bufferedReader.readLine()) != null){
             System.out.println(fileText);
         }
 
-        input.close();
-        in.close();
+        bufferedReader.close();
+        fullFilePath.close();
     }
 }
