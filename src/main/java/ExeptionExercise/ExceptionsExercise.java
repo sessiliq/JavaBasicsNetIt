@@ -2,7 +2,7 @@ package ExeptionExercise;
 
 import java.io.*;
 
-public class ExeptionsExercise {
+public class ExceptionsExercise {
 
     public static void readFile(String filePath) throws IOException {
         FileInputStream fullFilePath = new FileInputStream(filePath);
