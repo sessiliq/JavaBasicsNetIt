@@ -2,7 +2,11 @@ package ExeptionExercise;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
+/*
+All exceptions must be caught  or thrown
+Caught means to process the exception
+Thrown is to give the responsibility to another method to process it
+ */
 public class MainMethod {
     //If a method throws exception it must be declared in the method signature; in first method and in all that calls it
     public static void main(String[] args) throws IOException {
